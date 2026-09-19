@@ -1,0 +1,96 @@
+.range-wrapper {
+  width: 300px;
+  padding: 20px;
+}
+.digistylecriteriarow{
+  display: flex;
+  margin-bottom:8px;
+  justify-content: space-between; /* فاصله کامل */
+  align-items: center;            /* وسط‌چین عمودی */
+}
+
+.digistylecriteriarow span {
+  order: 2; /* اول اسپن بیاد */
+}
+
+.digistylecriteriarow label {
+  order: 1; /* بعد لیبل بیاد */
+}
+.range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Track */
+.range-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+}
+.range-slider::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* Thumb */
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #4f46e5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
+  margin-top: -6px; /* وسط چین شدن */
+}
+.range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background: #4f46e5;
+}
+.range-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #4f46e5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+.range-slider::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  background: #4f46e5;
+}
+.wccr-row progress{
+  width:100%;
+  height: 8px;
+  border-radius: 0px;
+  border: 0px !important;
+  overflow: hidden;
+  appearance: none;
+}
+/* رنگ پس‌زمینه (قسمت خالی) */
+.wccr-row progress::-webkit-progress-bar {
+  background-color: #e5e7eb; /* خاکستری روشن */
+  border-radius: 0px;
+}
+
+/* رنگ مقدار پر شده */
+.wccr-row progress::-webkit-progress-value {
+  background: #555;
+  border-radius: 0px;
+  transition: width 0.3s ease; /* انیمیشن نرم پر شدن */
+}
+
+/* برای فایرفاکس */
+.wccr-row progress::-moz-progress-bar {
+  background: #555;
+  border-radius: 0px;
+}

@@ -1,0 +1,44 @@
+.menu > li.menu-item,
+.elementor-nav-menu .menu-item,
+.elementor-nav-menu--main .menu-item { position: relative; }
+
+.custom-mega-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    z-index: 9999;
+    display: none;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity .18s ease, transform .18s ease;
+}
+
+html[dir="rtl"] .custom-mega-menu{
+    left: auto;
+    right: 0;
+}
+
+.custom-mega-menu .mega-arrow{
+    position: absolute;
+    top: -8px;
+    width: 0; height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    left: 24px;
+}
+html[dir="rtl"] .custom-mega-menu .mega-arrow{
+    left: auto;
+    right: 24px;
+}
+
+.menu-item.mega-open > .custom-mega-menu{
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.elementor-section, .elementor-container, .elementor-row { overflow: visible !important; }

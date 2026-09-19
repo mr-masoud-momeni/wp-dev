@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Product Carousel
+   ========================================================================== */
+
+.octo-product-carousel {
+    width: 100%;
+    position: relative;
+    max-width:1304px;
+    margin: 0 auto;
+    
+}
+
+
+/* ==========================================================================
+   Amazing Variant
+   ========================================================================== */
+
+.octo-product-carousel.amazing {
+    display: flex;
+    width: 100%;
+    height: 314px;
+    background: var(--carousel-color);
+    border-radius: 16px;
+    overflow: hidden;
+    max-width:1304px;
+    margin: 0 auto;
+}
+
+
+/* --------------------------------------------------------------------------
+   Amazing Banner
+   -------------------------------------------------------------------------- */
+
+.octo-product-carousel.amazing .carousel-banner {
+    flex: 0 0 220px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+}
+
+.octo-product-carousel.amazing .carousel-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.octo-product-carousel.amazing .carousel-icon {
+    font-size: 42px;
+    line-height: 1;
+
+    margin-bottom: 16px;
+}
+
+.octo-product-carousel.amazing .carousel-banner h2 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* ==========================================================================
+   Default Variant
+   ========================================================================== */
+
+.octo-product-carousel.default {
+    width: 100%;
+    background: #fff;
+}
+
+
+/* --------------------------------------------------------------------------
+   Default Header
+   -------------------------------------------------------------------------- */
+
+.octo-product-carousel.default .carousel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-bottom: 16px;
+}
+
+.octo-product-carousel.default .carousel-header h2 {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.octo-product-carousel.default .carousel-view-all {
+    color: #19a15f;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+.octo-product-carousel.default .carousel-view-all:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   Products Wrapper
+   ========================================================================== */
+
+.octo-product-carousel .carousel-products-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-width: 0;
+}
+
+
+/* ==========================================================================
+   Products
+   ========================================================================== */
+
+.octo-product-carousel .carousel-products {
+    display: flex;
+    align-items: stretch;
+
+    gap: 8px;
+
+    width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.octo-product-carousel .carousel-arrow {
+    position: absolute;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    padding: 0;
+
+    background: #fff;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+
+    color: #333;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.octo-product-carousel .carousel-arrow:hover {
+    background: #f5f5f5;
+}
+
+.octo-product-carousel .carousel-arrow.prev {
+    left: 8px;
+}
+
+.octo-product-carousel .carousel-arrow.next {
+    right: 8px;
+}
+
+
+/* ==========================================================================
+   Amazing View All
+   ========================================================================== */
+
+.octo-product-carousel.amazing .view-all-card {
+    flex: 0 0 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100%;
+
+    padding: 16px;
+
+    background: #fff;
+
+    color: #333;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+.octo-product-carousel.amazing .view-all-card:hover {
+    background: #f7f7f7;
+}
+
+
+/* ==========================================================================
+   Product Cards
+   ========================================================================== */
+
+.octo-product-carousel .product-card {
+    flex: 0 0 180px;
+
+    min-width: 0;
+}
+
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+
+    .octo-product-carousel.amazing {
+        height: 300px;
+    }
+
+    .octo-product-carousel.amazing .carousel-banner {
+        flex-basis: 180px;
+    }
+
+    .octo-product-carousel .product-card {
+        flex-basis: 170px;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+    .octo-product-carousel.amazing {
+        display: block;
+        height: auto;
+    }
+
+    .octo-product-carousel.amazing .carousel-banner {
+        width: 100%;
+        height: 90px;
+    }
+
+    .octo-product-carousel.amazing .carousel-banner-content {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .octo-product-carousel.amazing .carousel-icon {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .octo-product-carousel.amazing .carousel-banner h2 {
+        font-size: 20px;
+    }
+
+    .octo-product-carousel .carousel-products {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .octo-product-carousel .carousel-products::-webkit-scrollbar {
+        display: none;
+    }
+
+    .octo-product-carousel .product-card {
+        flex-basis: 160px;
+    }
+
+}

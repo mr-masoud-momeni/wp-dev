@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'IRANSans';
+  src: url('IRANSans/woff2/IRANSansWeb.woff2') format('woff2'),
+       url('IRANSans/woff/IRANSansWeb.woff') format('woff');
+  font-weight: 400; /* Normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('IRANSans/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),
+       url('IRANSans/woff/IRANSansWeb_UltraLight.woff') format('woff');
+  font-weight: 200; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IRANSans';
+  src: url('IRANSans/woff2/IRANSansWeb_Light.woff2') format('woff2'),
+       url('IRANSans/woff/IRANSansWeb_Light.woff') format('woff');
+  font-weight: 300; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IRANSans';
+  src: url('IRANSans/woff2/IRANSansWeb_Medium.woff2') format('woff2'),
+       url('IRANSans/woff/IRANSansWeb_Medium.woff') format('woff');
+  font-weight: 500; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IRANSans';
+  src: url('IRANSans/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
+       url('IRANSans/woff/IRANSansWeb_Bold.woff') format('woff');
+  font-weight: 700; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IRANSans';
+  src: url('IRANSans/woff2/IRANSansWeb_Black.woff2') format('woff2'),
+       url('IRANSans/woff/IRANSansWeb_Black.woff') format('woff');
+  font-weight: 900; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Anjoman';
+  src: url('Anjoman/woff2/Anjoman-FaNum-Light.woff2') format('woff2'),
+       url('Anjoman/woff/Anjoman-FaNum-Light.woff') format('woff');
+  font-weight: 300; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Anjoman';
+  src: url('Anjoman/woff2/Anjoman-FaNum-Regular.woff2') format('woff2'),
+       url('Anjoman/woff/Anjoman-FaNum-Regular.woff') format('woff');
+  font-weight: 400; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Anjoman';
+  src: url('Anjoman/woff2/Anjoman-FaNum-Bold.woff2') format('woff2'),
+       url('Anjoman/woff/Anjoman-FaNum-Bold.woff') format('woff');
+  font-weight: 700; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'iranyekan';
+  src: url('iranyekan/woff2/iranyekanwebthinfanum.woff2') format('woff2'),
+       url('iranyekan/woff/iranyekanwebthinfanum.woff') format('woff');
+  font-weight: 300; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'iranyekan';
+  src: url('iranyekan/woff2/iranyekanwebregularfanum.woff2') format('woff2'),
+       url('iranyekan/woff/iranyekanwebregularfanum.woff') format('woff');
+  font-weight: 400; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'iranyekan';
+  src: url('iranyekan/woff2/iranyekanwebmediumfanum.woff2') format('woff2'),
+       url('iranyekan/woff/iranyekanwebmediumfanum.woff') format('woff');
+  font-weight: 500; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'iranyekan';
+  src: url('iranyekan/woff2/iranyekanwebboldfanum.woff2') format('woff2'),
+       url('iranyekan/woff/iranyekanwebboldfanum.woff') format('woff');
+  font-weight: 700; /* Normal */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'iranyekan';
+  src: url('iranyekan/woff2/iranyekanwebextraboldfanum.woff2') format('woff2'),
+       url('iranyekan/woff/iranyekanwebextraboldfanum.woff') format('woff');
+  font-weight: 900; /* Normal */
+  font-style: normal;
+}

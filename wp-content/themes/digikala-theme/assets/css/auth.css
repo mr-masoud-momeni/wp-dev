@@ -1,0 +1,59 @@
+body{
+    background:#f5f5f5;
+    font-family:sans-serif;
+}
+
+.auth-wrapper{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.auth-box{
+    width:100%;
+    max-width:420px;
+    background:#fff;
+    border-radius:16px;
+    padding:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.step{
+    display:none;
+}
+
+.step.active{
+    display:block;
+}
+
+input{
+    height:44px;
+    border-radius:10px !important;
+}
+
+.btn-octo{
+    height:44px;
+    border-radius:10px;
+    background:#ed1944 !important;
+    color:#fff !important;
+}
+
+.btn-octo:hover,
+.btn-octo:active,
+.btn-octo:focus{
+    background:#ed1944 !important;
+    color:#fff !important;
+    box-shadow:none !important;
+}
+
+.small-links a{
+    font-size:13px;
+    cursor:pointer;
+}
+.octo-error{
+    color:#ed1944;
+    font-size:12px;
+    margin-bottom:25px;
+}
