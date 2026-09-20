@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="itr">
+<html lang="fa" dir="rtl">
 
 <head>
 
