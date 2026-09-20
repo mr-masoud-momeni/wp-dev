@@ -1,10 +1,23 @@
+---
 deployment:
   tasks:
-    # مسیر ریپو (جایی که گیت clone شده)
+    # مسیر ریپو
     - export REPOPATH=/home/isbtoevq/repo/
 
     # مسیر سایت اصلی
     - export DEPLOYPATH=/home/isbtoevq/public_html/
 
-    # سینک wp-content از repo به سایت
-    - rsync -av --exclude="uploads/" $REPOPATH/wp-content/ $DEPLOYPATH/wp-content/
+    # ساخت مسیر wp-content در صورت نبودن
+    - mkdir -p $DEPLOYPATH/wp-content/
+
+    # سینک پلاگین‌ها
+    - /bin/rsync -av $REPOPATH/wp-content/plugins/ $DEPLOYPATH/wp-content/plugins/
+
+    # سینک قالب‌ها
+    - /bin/rsync -av $REPOPATH/wp-content/themes/ $DEPLOYPATH/wp-content/themes/
+
+    # سینک mu-plugins
+    - /bin/rsync -av $REPOPATH/wp-content/mu-plugins/ $DEPLOYPATH/wp-content/mu-plugins/
+
+    # سینک سایر محتوای wp-content، به جز uploads
+    - /bin/rsync -av --exclude="uploads/" --exclude=".git/" $REPOPATH/wp-content/ $DEPLOYPATH/wp-content/
