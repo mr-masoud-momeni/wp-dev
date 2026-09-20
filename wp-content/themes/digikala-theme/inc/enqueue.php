@@ -38,10 +38,31 @@ function octo_theme_assets()
     */
 
     wp_enqueue_style(
+        'octo-base',
+        get_theme_file_uri('/assets/css/base.css'),
+        ['bootstrap'],
+        OCTO_THEME_VERSION
+    );
+
+    wp_enqueue_style(
+        'octo-header',
+        get_theme_file_uri('/assets/css/header.css'),
+        ['octo-base'],
+        OCTO_THEME_VERSION
+    );
+
+    wp_enqueue_style(
+        'octo-product',
+        get_theme_file_uri('/assets/css/product.css'),
+        ['octo-base'],
+        OCTO_THEME_VERSION
+    );
+
+    wp_enqueue_style(
         'octo-app',
         get_theme_file_uri('/assets/css/app.css'),
-        ['bootstrap'],
-        '1.0.0'
+        ['octo-base', 'octo-header', 'octo-product'],
+        OCTO_THEME_VERSION
     );
 
     /*
