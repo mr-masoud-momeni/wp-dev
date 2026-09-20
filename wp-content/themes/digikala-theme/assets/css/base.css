@@ -1,0 +1,36 @@
+/* =========================
+   DESIGN TOKENS & GLOBALS
+========================== */
+
+:root {
+    --color-primary: #ef4056;
+    --color-text: #3f4064;
+    --color-muted: #81858b;
+    --color-border: #e0e0e2;
+    --color-background: #f5f5f5;
+    --color-white: #fff;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+
+    --container-width: 1304px;
+}
+
+body {
+    margin: 0;
+    direction: ltr;
+    background: #ffffff;
+    font-family: sans-serif;
+}
+
+.octo-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1676px;
+    margin-inline: auto;
+}
