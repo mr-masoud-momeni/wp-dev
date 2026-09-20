@@ -28,7 +28,7 @@
 
                 <i class="bi bi-geo-alt"></i>
 
-                <span>Choose your address</span>
+                <span>انتخاب آدرس</span>
 
             </button>
 
