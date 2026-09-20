@@ -1,14 +1,11 @@
 ---
 deployment:
   tasks:
-    # مسیر ریپو
     - export REPOPATH=/home/isbtoevq/repo/
-
-    # مسیر سایت
     - export DEPLOYPATH=/home/isbtoevq/public_html/
 
     # قالب پروژه
-    - /bin/rsync -av $REPOPATH/wp-content/themes/digikala-theme/ $DEPLOYPATH/wp-content/themes/digikala-theme/
+    - /bin/cp -R $REPOPATH/wp-content/themes/digikala-theme $DEPLOYPATH/wp-content/themes/
 
     # پلاگین‌های پروژه
-    - /bin/rsync -av $REPOPATH/wp-content/plugins/ $DEPLOYPATH/wp-content/plugins/
+    - /bin/cp -R $REPOPATH/wp-content/plugins $DEPLOYPATH/wp-content/
