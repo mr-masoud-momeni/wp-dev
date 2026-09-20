@@ -81,9 +81,13 @@
     --container-width: 1304px;
 }
 
+html {
+    direction: rtl;
+}
+
 body {
     margin: 0;
-    direction: ltr;
+    direction: rtl;
     background: #ffffff;
     font-family: 'Yekan Bakh FaNum', sans-serif;
 }
