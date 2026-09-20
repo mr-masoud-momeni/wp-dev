@@ -2,6 +2,70 @@
    DESIGN TOKENS & GLOBALS
 ========================== */
 
+@font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('../../font/yekanbakhfa/woff/YekanBakhFaNum-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('../../font/yekanbakhfa/woff/YekanBakhFaNum-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('../../font/yekanbakhfa/woff/YekanBakhFaNum-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('../../font/yekanbakhfa/woff/YekanBakhFaNum-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('../../font/yekanbakhfa/woff/YekanBakhFaNum-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('../../font/yekanbakhfa/woff/YekanBakhFaNum-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('../../font/yekanbakhfa/woff/YekanBakhFaNum-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('../../font/yekanbakhfa/woff/YekanBakhFaNum-ExtraBlack.woff') format('woff');
+    font-weight: 950;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --color-primary: #ef4056;
     --color-text: #3f4064;
@@ -21,7 +85,7 @@ body {
     margin: 0;
     direction: ltr;
     background: #ffffff;
-    font-family: sans-serif;
+    font-family: 'Yekan Bakh FaNum', sans-serif;
 }
 
 .octo-container {
